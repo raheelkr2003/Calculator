@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main-body">
+        <div class="output-section">
+            <input type="text" id="output" value="0">
+        </div>
+
+        <div class="input-section">
+            <button onclick="deleteLast()" class="btn-org" style="background-color: orange;">DEL</button>
+            <button onclick="clearDisplay()" class="btn-org" style="background-color: orange;">C</button>
+            <button onclick="displayInput('%')" style="background-color: gray;">% </button>
+            <button onclick="displayInput('+')" style="background-color: gray;">+</button>
+            <button onclick="displayInput('1')">1</button>
+            <button onclick="displayInput('2')">2</button>
+            <button onclick="displayInput('3')">3</button>
+            <button onclick="displayInput('*')" style="background-color: gray;">*</button>
+            <button onclick="displayInput('4')">4</button>
+            <button onclick="displayInput('5')">5</button>
+            <button onclick="displayInput('6')">6</button>
+            <button onclick="displayInput('-')" style="background-color: gray;">-</button>
+            <button onclick="displayInput('7')">7</button>
+            <button onclick="displayInput('8')">8</button>
+            <button onclick="displayInput('9')">9</button>
+            <button onclick="displayInput('/')" style="background-color: gray;">/</button>
+            <button onclick="displayInput('0')" id="zero">0</button>
+            <button onclick="calculateResult()" class="btn-org" style="background-color: orange;">=</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
